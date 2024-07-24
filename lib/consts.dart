@@ -1,0 +1,2 @@
+const String CRYPTO_API =
+    'eb8167cb751e68ac6d416a0228ec7396a6c366ad84456c2b7f09a72ff28f';
