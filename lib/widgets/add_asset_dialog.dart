@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_rx/get_rx.dart';
 import 'package:getx_intro/controllers/assets_controller.dart';
 import 'package:getx_intro/models/api_response.dart';
 import 'package:getx_intro/services/http_service.dart';
@@ -18,8 +17,7 @@ class AddAssetDialogController extends GetxController {
     _getAssets();
   }
 
-  Future<void> _getAssets() async {
-    loading.value = true;
+  Future<void> _getAssets() async {    loading.value = true;
     HttpService httpService = Get.find();
     var responseData = await httpService.get("currencies");
     CurrenciesListAPIResponse currenciesListAPIResponse =
